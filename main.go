@@ -5,6 +5,7 @@ import (
 	"log"
 	"os"
 	"strings"
+	"time"
 )
 
 func main() {
@@ -19,6 +20,7 @@ func main() {
 		main()
 	} else if diretorio == "1" {
 		fmt.Println("Saindo...")
+		time.Sleep(time.Second * 3)
 		os.Exit(0)
 	} else {
 
@@ -44,6 +46,7 @@ func main() {
 			main()
 		} else if continuar == 1 {
 			fmt.Println("Saindo...")
+			time.Sleep(time.Second * 3)
 			os.Exit(0)
 		}
 
